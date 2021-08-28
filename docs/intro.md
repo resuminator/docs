@@ -2,34 +2,20 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to Resuminator
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to the official documentation and wiki of Resuminator. The articles here shall guide you through using Resuminator and help you answer common questions about the software.
 
-## Getting Started
+Resuminator gives you the fastest and the smoothest resume building experience ever. With an intuitive user inteface and what-you-see-is-what-you-get (WYSIWYG) editor, you can create your first job winning resume withing minutes.
 
-Get started by **creating a new site**.
+📃 Single page resumes in **one or two column** layout.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+🎨 Enhanced design controls with hand-picked **font** pairings, **color** schemes, and flexible **spacing**.
 
-## Generate a new site
+✅ **Drag and Drop** layouts for easier editing
 
-Generate a new Docusaurus site using the **classic template**:
+🔠 Rich text editor with Markdown **shortcuts** and Grammarly Integration.
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
+⚡ Faster than any LaTeX editor, yet highly customizable.
 
-## Start your site
 
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
