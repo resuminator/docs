@@ -17,5 +17,3 @@ Resuminator gives you the fastest and the smoothest resume building experience e
 🔠 Rich text editor with Markdown **shortcuts** and Grammarly Integration.
 
 ⚡ Faster than any LaTeX editor, yet highly customizable.
-
-
