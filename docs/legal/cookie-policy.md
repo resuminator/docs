@@ -48,10 +48,10 @@ Type: Persistent Cookies
 Administered by: Us  
 Purpose: These Cookies allow us to remember choices you make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid You having to re-enter your preferences every time You use the Website.
 
-**Analytics Cookies**
-Type: Statistics
-Adminsitered by: Mixpanel
-Purpose: These Cookies allow us to track crash reports, performerance issues, user traffice on the website. They help us keep improving services and to check for reported instance and making a better experience for everyone. 
+**Analytics Cookies**  
+Type: Statistics  
+Adminsitered by: Mixpanel  
+Purpose: These Cookies allow us to track crash reports, performerance issues, user traffice on the website. They help us keep improving services and to check for reported instance and making a better experience for everyone.
 
 ### Your Choices Regarding Cookies
 
