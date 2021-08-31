@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Help & Support
 
-Resuminator is produdly a community driven software, which means that we build what our community tells us they want and they help us maintain the software with their open source contributions or feedback. 
+Resuminator is proudly a community driven software, which means that we build what our community tells us they want and they help us maintain the software with their open source contributions or feedback. 
 
 We provide support for any of your queries through 3 mediums
 1. **Discord #support (Recommended)** - The fastest method to get any query resolved is posting it in the #support channel of our [Discord community server]((https://discord.gg/KmXmJUJJMj)).
