@@ -13,6 +13,14 @@ module.exports = {
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
   themeConfig: {
+    announcementBar: {
+      id: "hacktoberfest-21",
+      content:
+        "We are participating in <b>Hacktoberfest 2021</b> 🥳 Contribute to Resuminator this October. <a href='/docs/hacktoberfest'>Learn More</a>",
+      backgroundColor: "#FFEDD5",
+      textColor: "#2B3531",
+      isCloseable: false,
+    },
     navbar: {
       title: "Resuminator Docs",
       logo: {
