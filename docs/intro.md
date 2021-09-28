@@ -19,6 +19,7 @@ Resuminator gives you the fastest and the smoothest resume building experience e
 ⚡ Faster than any LaTeX editor, yet highly customizable.
 
 ## Where to get started?
+
 * If you're new to Resuminator check out our [Quick Start Guide](introduction/quick-start) to get started with your first resume.
 * If you want to know more about the features of Resuminator, have a look at [Guides](#)
 * If you want to contribute to this software, have a look at [Contributing](#).
@@ -30,4 +31,3 @@ Resuminator is a completely free and open source project built and maintained by
 You can support the development of this project if you believe this project added value to your life or could potentially add value to the lives of others. Your support helps us keep the servers and domain running and covers the maintenance budget for the project.
 
 Show your support by **[🍕 buying the team a pizza](https://www.buymeacoffee.com/resuminator)**
-

@@ -8,7 +8,8 @@ Resuminator from the outside may look like a simple piece of software but the ma
 
 We develop and deploy our products with a variety of frameworks and tools. You can find the tech stack related to different repositories below.
 
-## resuminator 
+## resuminator
+
 Found at [resuminator/resuminator](https://github.com/resuminator/resuminator), this repository holds the code for the Resuminator webapp and its website.
 
 **Programming Language** - TypeScript v4
@@ -47,6 +48,7 @@ Found at [resuminator/resuminator-server](https://github.com/resuminator/resumin
 |[JOI](https://github.com/sideway/joi)|^17.4.0|Data Validation|
 
 Apart from this we use two primary third-party services
+
 * [Mongo DB Atlas](https://www.mongodb.com/cloud/atlas) - Database Cloud Hosting Solution
 * [Posthog](https://posthog.com/) - Server side analytics suite
 
@@ -63,4 +65,3 @@ Found at [resuminator/docs](https://github.com/resuminator/docs), serves as the 
 * Resuminator Server is currently hosted on [Heroku](http://www.heroku.com/), which provides a decent and free hosting solution for our needs.
 
 * Docs are hosted on [Netlify](https://www.netlify.com/) which is another brilliant hosting solution for all the JAMStack websites and otherwise
-

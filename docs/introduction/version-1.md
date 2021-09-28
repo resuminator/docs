@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 # Version 1 FAQ
+
 Version 1 will be going away on 30th September, 2021. To continue using Resuminator Switch to [Version 2](https://www.resuminator.in/signup)
 
 ## What happened to version 1?
