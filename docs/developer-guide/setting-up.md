@@ -26,4 +26,5 @@ _**eg**_. If you are in India
 - For Firebase, Choose `asia-south1`.
 - For MongoDB Atlas, Choose either `asia-south1` on **GCP**(_Recommended_) or `ap-south-1` on **AWS** or `centralindia` on **Azure**.
 - For self-hosted PostHog, you can use same recommendation as that of MongoDB Atlas.
-  :::
+
+:::
