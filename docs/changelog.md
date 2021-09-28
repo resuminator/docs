@@ -87,13 +87,13 @@ A big major release for Resuminator introduces a ton of changes from the ground 
 
 - #48 Flexible grading style options, out of 4, 10, 100
 
-### Support
+## Support
 
 The software offers community support through a few mediums like Discord, Direct Messages, and Email. Refer to [this article](https://docs.resuminator.in/docs/support/) for more information.
 
-### Legal
+## Legal
 
-The software is licensed under GNU GPL-v3 and is GDPR compliant.
+The software is licensed under GNU GPL-v3 and is GDPR & PCI-DSS 3.2 Compliant.
 
 ## v1 Releases
 
