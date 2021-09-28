@@ -51,6 +51,7 @@ Apart from this we use two primary third-party services
 
 * [Mongo DB Atlas](https://www.mongodb.com/cloud/atlas) - Database Cloud Hosting Solution
 * [Posthog](https://posthog.com/) - Server side analytics suite
+* [SendGrid](https://sendgrid.com/) - Sending Email to Users
 
 ## docs
 
