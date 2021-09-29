@@ -4,6 +4,21 @@ sidebar_position: 7
 
 # Changelog
 
+## v2.1.1🚀 
+
+### 🆕 Features
+* Added Hacktoberfest 2021 Page
+* Removed PDF Generation Logic and shifted to [resuminator/papyrus](https://github.com/resuminator/papyrus)
+
+### ☑️ Patches
+* Added Sponsorship cards
+* Updated Twitter SEO and Profile Images
+* Updated Broadmap Logo
+* Updated Website Copy
+
+### 📦 Dependencies
+* Upgraded to NextJS 11.1.2
+
 ## v2.1.0
 
 ### 🆕 Features
