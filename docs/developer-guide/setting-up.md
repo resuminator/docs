@@ -96,16 +96,21 @@ It might take some time depending on your system's speed and internet connection
 `NEXT_PUBLIC_MIXPANEL`, `NEXT_PUBLIC_PAPERCUPS`, `NEXT_PUBLIC_PAPYRUS`, and `NEXT_PUBLIC_APP_PROD` are optional configurations which are needed for a production level setup but can be ignored for the development setup.
 :::
 
-3. Finally once you have your .env.local file in place, you can start the frontend using 
-   ```
-   npm run dev
-   ```
+### Starting the dev instance
 
-This will by default start the server at `http://localhost:3000` where you can find Resuminator's landing page 🎉
+Finally once you have your `.env.local` configurations file in place, you can start the frontend using the following command.
 
-**Next, you need to setup the backend server if you wish to contribute to the main app.**
+```
+npm run dev
+```
+
+This will by default start the server at `http://localhost:3000` where you can find Resuminator's landing page.
+
+**Congratulations!** Your frontend setup is now complete 🎉
 
 :::info
+Next, you need to setup the backend server if you wish to contribute to the main app.
+
 You may not need to setup the backend server if you only wish to contribute to the website and NOT the main application.
 :::info
 
