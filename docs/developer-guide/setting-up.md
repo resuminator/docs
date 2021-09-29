@@ -4,21 +4,122 @@ sidebar-position: 3
 
 # Setting Up
 
-This is a guide for setting up Resuminator for local Development.
+This is a guide for setting up Resuminator for local Development. Our complete application (frontend + backend + website) is built using TypeScript. You can have a look at the whole [tech stack](/docs/developer-guide/tech-stack) to understand the internal components.
 
-## Backend
+## Pre-requisites
 
-### Pre-Requisites
+- [Node.js](https://nodejs.org/en/download/) version >= 14 or above (which can be checked by running `node -v`). You can use nvm for managing multiple Node versions on a single machine installed.
 
-- [Node.js](https://nodejs.org/en/download/) version >= 14.17 or above (which can be checked by running node -v). You can use nvm for managing multiple Node versions on a single machine installed.
-
-- MongoDB version = 4.4.9. You can either spun a local/docker instance or can use [MongoDB Atlas](https://www.mongodb.com/)(Recommended). We highly use MongoDB Atlas at Resuminator for all of our MongoDB needs.
+```bash
+$ node -v
+v14.15.1
+```
 
 - [Firebase](https://firebase.google.com/) Account, We use firebase for authentication and storing media files. So, It is required to have a firebase account ready.
 
+## Frontend
+
+The repository found at [resuminator/resuminator](https://github.com/resuminator/resuminator) serves as the codebase for the primary application and also the website at https://www.resuminator.in.
+
+### Setting up the repository
+
+1. Fork the repository at - [resuminator/resuminator](https://github.com/resuminator/resuminator) to your GitHub account.
+
+2. Then clone the forked repository, by typing the following line in your local terminal/powershell. Remember to replace `<your-username>` with your actual GitHub username.
+
+   ```bash
+   git clone https://github.com/<your-username>/resuminator.git
+   ```
+
+3. Navigate to the cloned repository on your local system
+
+   ```bash
+   cd resuminator
+   ```
+
+4. Add remotes to the parent repository. This will help you fetch the code from the parent repo to avoid any merge conflicts later.
+
+   ```bash
+   git remote add upstream https://github.com/resuminator/resuminator.git
+   ```
+
+   To verify, use the command `git remote -v` to check if you have two remotes - origin and upstream set up.
+
+   ```bash
+   origin  https://github.com/<your-username>/resuminator.git (fetch)     
+   origin  https://github.com/<your-username>/resuminator.git (push)      
+   upstream        https://github.com/resuminator/resuminator.git (fetch)
+   upstream        https://github.com/resuminator/resuminator.git (push) 
+   ```
+
+5. Finally, fetch the upstream's latest code from the main branch.
+
+   ```bash
+   git fetch upstream main
+   ```
+
+### Configuring the project
+
+Now that you have setup the repository correctly, the next thing we will focus on is how to configure your frontend for it to be up and running and ready to receive requests from the backend server.
+
+1. Install all the dependencies on your local system using the command given below. 
+
+:::note
+It might take some time depending on your system's speed and internet connection.
+:::
+
+   ```bash
+   npm install
+   ```
+
+2. We now need to configure the local environment variables which are required for external services Resuminator uses (like Firebase)
+
+   For that in your root folder create a new file named `.env.local` and copy the configuration below to it. Replace the required values with your own account configurations.
+
+   ```txt title=".env.local"
+   NEXT_PUBLIC_API_BASE_URL="https://localhost:PORT"
+
+   NEXT_PUBLIC_API_KEY='YOUR_FIREBASE_API_KEY'
+   NEXT_PUBLIC_AUTH_DOMAIN='YOUR_FIREBASE_AUTH_DOMAIN'
+   NEXT_PUBLIC_PROJECT_ID='YOUR_FIREBASE_PROJECT_ID'
+   NEXT_PUBLIC_STORAGE_BUCKET='YOUR_FIREBASE_STORAGE_BUCKET_ADDRESS'
+   NEXT_PUBLIC_MESSAGING_SENDER_ID='YOUR_FIREBASE_MESSAGING_SENDER_ID'
+   NEXT_PUBLIC_FIREBASE_ID='YOUR_FIREBASE_APP_ID'
+
+   NEXT_PUBLIC_APP_PROD=Resuminator's Hosted Instance Address (Optional)
+   NEXT_PUBLIC_MIXPANEL=Mixpanel API Key (Optional) 
+   NEXT_PUBLIC_PAPERCUPS=Papercups Account Key (Optional)
+   NEXT_PUBLIC_PAPYRUS=Papyrus Server Instance Address (Optional)
+   ``` 
+
+:::info
+`NEXT_PUBLIC_MIXPANEL`, `NEXT_PUBLIC_PAPERCUPS`, `NEXT_PUBLIC_PAPYRUS`, and `NEXT_PUBLIC_APP_PROD` are optional configurations which are needed for a production level setup but can be ignored for the development setup.
+:::
+
+3. Finally once you have your .env.local file in place, you can start the frontend using 
+   ```
+   npm run dev
+   ```
+
+This will by default start the server at `http://localhost:3000` where you can find Resuminator's landing page 🎉
+
+**Next, you need to setup the backend server if you wish to contribute to the main app.**
+
+:::info
+You may not need to setup the backend server if you only wish to contribute to the website and NOT the main application.
+:::info
+
+## Backend
+
+### Required Services
+
+- **MongoDB** version = 4.4.9. You can either spun a local/docker instance or can use [MongoDB Atlas](https://www.mongodb.com/) (Recommended). We highly use MongoDB Atlas at Resuminator for all of our MongoDB needs.
+
 - [SendGrid](https://sendgrid.com/) is used for sending email on signup and account deletion.
 
-- (_Optional_) PostHog Account. We use posthog for server-side analytics. You can either use [PostHog Cloud](https://posthog.com/) or set up your [own PostHog](https://github.com/PostHog/posthog) as it is also Open Source.
+### Optional Services
+
+- **PostHog** Account. We use posthog for server-side analytics. You can either use [PostHog Cloud](https://posthog.com/) or set up your [own PostHog](https://github.com/PostHog/posthog) as it is also Open Source.
 
 :::tip
 For all cloud related resources, to have lower write latency select region closer to you.
