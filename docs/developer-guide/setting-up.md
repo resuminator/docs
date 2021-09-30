@@ -130,9 +130,11 @@ You may not need to setup the backend server if you only wish to contribute to t
 
 ## Backend
 
+The repository found at [resuminator/resuminator-server](https://github.com/resuminator/resuminator-server) serves as the codebase for the API server which connects to a MongoDB instance to store and retieve user data.
+
 ### Required Services
 
-- **MongoDB** version = 4.4.9. You can either spun a local/docker instance or can use [MongoDB Atlas](https://www.mongodb.com/) (Recommended). We highly use MongoDB Atlas at Resuminator for all of our MongoDB needs.
+- **MongoDB** version = 4.4.9. You can either spin up a local/Docker instance or can use [MongoDB Atlas](https://www.mongodb.com/) (Recommended). We personally use MongoDB Atlas at Resuminator for all of our MongoDB needs.
 
 - [SendGrid](https://sendgrid.com/) is used for sending email on signup and account deletion.
 
@@ -146,87 +148,155 @@ For all cloud related resources, to have lower write latency select region close
 _**eg**_. If you are in India
 
 - For Firebase, Choose `asia-south1`.
-- For MongoDB Atlas, Choose either `asia-south1` on **GCP**(_Recommended_) or `ap-south-1` on **AWS** or `centralindia` on **Azure**.
+- For MongoDB Atlas, Choose either `asia-south1` on **GCP** (_Recommended_) or `ap-south-1` on **AWS** or `centralindia` on **Azure**.
 - For self-hosted PostHog, you can use same recommendation as that of MongoDB Atlas.
 
 :::
 
-### Configuration
+### Setting up the repository
 
-Follow the below steps to have a working backend.
+1. Fork the repository at - [resuminator/resuminator-server](https://github.com/resuminator/resuminator-server) to your GitHub account.
 
-1. Clone the Repository.
+2. Then clone the forked repository, by typing the following line in your local terminal/powershell. Remember to replace `<your-username>` with your actual GitHub username.
 
    ```bash
-   git clone https://github.com/resuminator/resuminator-server.git
+   git clone https://github.com/<your-username>/resuminator-server.git
    ```
 
-1. Navigate to Repository.
+3. Navigate to the cloned repository on your local system
 
    ```bash
    cd resuminator-server
    ```
 
-1. Install the dependencies.
+4. Add remotes to the parent repository. This will help you fetch the code from the parent repo to avoid any merge conflicts later.
+
+   ```bash
+   git remote add upstream https://github.com/resuminator/resuminator-server.git
+   ```
+
+   To verify, use the command `git remote -v` to check if you have two remotes - origin and upstream set up.
+
+   ```bash
+   origin  https://github.com/<your-username>/resuminator-server.git (fetch)     
+   origin  https://github.com/<your-username>/resuminator-server.git (push)      
+   upstream        https://github.com/resuminator/resuminator-server.git (fetch)
+   upstream        https://github.com/resuminator/resuminator-server.git (push) 
+   ```
+
+5. Finally, fetch the upstream's latest code from the main branch.
+
+   ```bash
+   git fetch upstream main
+   ```
+
+### Configuration
+
+Now that you have setup the backend repository correctly, the next thing we will focus on is how to configure project to start sending requests to the frontend instance.
+
+1. Install all the dependencies on your local system using the command given below. 
 
    ```bash
    npm install
    ```
 
-1. Create `.env` file and start adding following environment variable in the file.
+2. Create `.env` file in your root folder and start adding following environment variable in the file.
 
-   - `DB_URI` is the mongodb connection string. eg. `mongodb+srv://username:password@address/dbname`.
-   - Below mentioned firebase values are required and can be find in your service account credentinal. If You don't have firebase service account, Navigate to _Project Settings > Service accounts > Generate new private key_.
+- `DB_URI` is the mongodb connection string. eg. `mongodb+srv://username:password@address/dbname`.
 
-     - `FIREBASE_TYPE`
-     - `FIREBASE_PROJECT_ID`
-     - `FIREBASE_PRIVATE_KEY_ID`
-     - `FIREBASE_PRIVATE_KEY`
-     - `FIREBASE_CLIENT_EMAIL`
-     - `FIREBASE_CLIENT_ID`
-     - `FIREBASE_AUTH_URI`
-     - `FIREBASE_TOKEN_URI`
-     - `FIREBASE_AUTH_PROVIDER_X509_CERT_URL`
-     - `FIREBASE_CLIENT_X509_CERT_URL`
-
-   - `SG_API` is the API key provided by SendGrid.
-   - `SG_EMAIL` is the email from which you want to send notification email.
-   - `SG_DEL_ACC` is the unique dynamic template id for Account Deletion Email.
-   - `SG_NEW_ACC` is the unique dynamic template id for Account Creation Email.
-     :::tip
-     Find Dynamic Template for Account Creation & Deletion [here](https://github.com/resuminator/resuminator-server/tree/main/templates).
-     :::
-
-   - _(Optional)_ `NODE_ENV` specifies the node environment. Default is `development`.
-   - _(Optional)_ `PORT`, At which port you want to run application. Default is `8080`.
-   - _(Optional)_ `POSTHOG_API_KEY` is required to send server side analytics to PostHog.
-   - _(Optional)_ `POSTHOG_HOST` is required if you have added `POSTHOG_API_KEY`. You can put self-hosted or PostHog Cloud URL here. Default is `https://app.posthog.com`.
-   - _(Optional)_ `RESUME_COUNT` specifies number of max allowed resumes on platform. Deafult is `3`.
-   - _(Optional)_ `EDUCATION_COUNT` specifies number of max allowed education section on platform. Default is `10`.
-   - _(Optional)_ `EXPERIENCE_COUNT` specifies number of max allowed experience section on platform. Default is `10`.
-   - _(Optional)_ `PROJECT_COUNT` specifies number of max allowed project section on platform. Default is `10`.
-   - _(Optional)_ `CERTIFICATION_COUNT` specifies number of max allowed certification section on platform. Default is `10`.
-   - _(Optional)_ `PUBLICATION_COUNT`specifies number of max allowed publication section on platform. Default is `10`.
-   - _(Optional)_ `SKILL_COUNT` specifies number of max allowed skill section on platform. Default is `10`.
-   - _(Optional)_ `CUSTOM_SECTION_COUNT`pecifies number of max allowed custom section on platform. Default is `3`.
-     :::tip
-     You can find a basic `.env` file [here](https://github.com/resuminator/resuminator-server/blob/main/templates/.env.template)
-     :::
-
-1. Now, You can start the development server.
-
-   ```bash
-   npm run dev
+   ```txt title=".env"
+   NODE_ENV='development'
+   PORT=8080
+   DB_URI=mongodb+srv://username:password@address/dbname
    ```
 
-   Server should be running on PORT specified in env file.
+- Add the following configurations in your `.env` to connect your Firebase account. These values can be found in your Service Account Credential. If You don't have a Firebase Service Account, Navigate to _Project Settings > Service accounts > Generate new private key_.
 
-1. Hit `localhost:PORT/v0.2.0` in your browser and following output should appear.
-
-   ```json
-   {
-     "message": "Welcome to Resuminator Backend",
-     "version": "0.2.0",
-     "license": "GPLv3"
-   }
+   ```txt title=".env"
+   ...
+   FIREBASE_TYPE=
+   FIREBASE_PROJECT_ID=
+   FIREBASE_PRIVATE_KEY_ID=
+   FIREBASE_PRIVATE_KEY=
+   FIREBASE_CLIENT_EMAIL=
+   FIREBASE_CLIENT_ID=
+   FIREBASE_AUTH_URI=
+   FIREBASE_TOKEN_URI=
+   FIREBASE_AUTH_PROVIDER_X509_CERT_URL=
+   FIREBASE_CLIENT_X509_CERT_URL=
    ```
+
+- Setup a Send Grid account and use add the following configurations to connect to Send Grid.
+
+   ```txt title=".env"
+   ...
+   SG_API=API key provided by SendGrid
+   SG_DEL_ACC=Email from which you want to send notification email.
+   SG_EMAIL=Unique dynamic template id for Account Deletion Email.
+   SG_NEW_ACC=Unique dynamic template id for Account Creation Email.
+   ```
+
+:::tip
+
+Find Dynamic Template for Account Creation & Deletion [here](https://github.com/resuminator/resuminator-server/tree/main/templates).
+
+:::
+
+### Optional Configuration
+
+There are some optional configurations which you can specify to have even more control over your backend instance. Add any (or all) of the required configurations in your `.env` file.
+
+```txt title=".env"
+NODE_ENV=specifies the node environment. Default is `development`.
+PORT=At which port you want to run application. Default is `8080`.
+```
+
+`POSTHOG_API_KEY` is required to send server side analytics to PostHog.
+`POSTHOG_HOST` is required if you have added `POSTHOG_API_KEY`. 
+You can put self-hosted or PostHog Cloud URL here. Default is `https://app.posthog.com`.
+
+```txt title=".env"
+...
+POSTHOG_API_KEY=is required to send server side analytics to PostHog.
+POSTHOG_HOST=is required if you have added `POSTHOG_API_KEY`.
+```
+
+You can also alter the limits imposed on the count of objects in the database using the following config values
+
+|Config Key|Specifies|Default Value|
+|-|-|-|
+|`RESUME_COUNT`|number of max allowed resumes on platform.|3|
+|`EDUCATION_COUNT`|number of max allowed education section on platform.|10|
+|`EXPERIENCE_COUNT`| number of max allowed experience section on platform|10|
+|`PROJECT_COUNT` | number of max allowed project section on platform | 10|
+|`CERTIFICATION_COUNT` | number of max allowed certification section on platform | 10|
+|`PUBLICATION_COUNT`| number of max allowed publication section on platform | 10|
+|`SKILL_COUNT` | number of max allowed skill section on platform |10|
+|`CUSTOM_SECTION_COUNT`| number of max allowed custom section on platform |3|
+
+
+:::tip
+You can find a basic `.env` file [here](https://github.com/resuminator/resuminator-server/blob/main/templates/.env.template)
+:::
+
+### Starting the dev instance
+
+Finally once you have your `.env` configurations file in place, you can start the backend using the following command.
+
+```bash
+npm run dev
+```
+
+Server should be running on `PORT` specified in env file (or `8080` by default)
+
+To test, type `localhost:PORT/v0.2.0` in your browser and following output should appear.
+
+```json
+{
+"message": "Welcome to Resuminator Backend",
+"version": "0.2.0",
+"license": "GPLv3"
+}
+```
+
+**Congratulations!** Your backend is now setup and you are ready to create resumes on your local system (or contribute to Resuminator) 🎉
