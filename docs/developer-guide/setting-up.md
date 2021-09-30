@@ -1,31 +1,38 @@
 ---
+
 sidebar-position: 3
 ---
 
 # Setting Up
 
-This is a guide for setting up Resuminator for local Development. Our complete application (frontend + backend + website) is built using TypeScript. You can have a look at the whole [tech stack](/docs/developer-guide/tech-stack) to understand the internal components.
+This is a guide for setting up Resuminator for local Development.
+Our complete application (frontend + backend + website) is built using TypeScript.
+You can have a look at the whole [tech stack](/docs/developer-guide/tech-stack) to understand the internal components.
 
 ## Pre-requisites
 
-- [Node.js](https://nodejs.org/en/download/) version >= 14 or above (which can be checked by running `node -v`). You can use nvm for managing multiple Node versions on a single machine installed.
+- [Node.js](https://nodejs.org/en/download/) version >= 14 or above (which can be checked by running `node -v`).
+You can use nvm for managing multiple Node versions on a single machine installed.
 
 ```bash
 $ node -v
 v14.15.1
 ```
 
-- [Firebase](https://firebase.google.com/) Account, We use firebase for authentication and storing media files. So, It is required to have a firebase account ready.
+- [Firebase](https://firebase.google.com/) Account, We use firebase for authentication and storing media files.
+So, It is required to have a firebase account ready.
 
 ## Frontend
 
-The repository found at [resuminator/resuminator](https://github.com/resuminator/resuminator) serves as the codebase for the primary application and also the website at https://www.resuminator.in.
+The repository found at [resuminator/resuminator](https://github.com/resuminator/resuminator)
+serves as the codebase for the primary application and also the website at <https://www.resuminator.in>.
 
 ### Setting up the repository
 
 1. Fork the repository at - [resuminator/resuminator](https://github.com/resuminator/resuminator) to your GitHub account.
 
-2. Then clone the forked repository, by typing the following line in your local terminal/powershell. Remember to replace `<your-username>` with your actual GitHub username.
+2. Then clone the forked repository, by typing the following line in your local terminal/powershell.
+Remember to replace `<your-username>` with your actual GitHub username.
 
    ```bash
    git clone https://github.com/<your-username>/resuminator.git
@@ -37,7 +44,8 @@ The repository found at [resuminator/resuminator](https://github.com/resuminator
    cd resuminator
    ```
 
-4. Add remotes to the parent repository. This will help you fetch the code from the parent repo to avoid any merge conflicts later.
+4. Add remotes to the parent repository. This will help you fetch the code from the parent repo to avoid any merge
+conflicts later.
 
    ```bash
    git remote add upstream https://github.com/resuminator/resuminator.git
@@ -60,9 +68,10 @@ The repository found at [resuminator/resuminator](https://github.com/resuminator
 
 ### Configuring the project
 
-Now that you have setup the repository correctly, the next thing we will focus on is how to configure your frontend for it to be up and running and ready to receive requests from the backend server.
+Now that you have setup the repository correctly, the next thing we will focus on is how to configure
+your frontend for it to be up and running and ready to receive requests from the backend server.
 
-1. Install all the dependencies on your local system using the command given below. 
+1. Install all the dependencies on your local system using the command given below.
 
    :::note
    It might take some time depending on your system's speed and internet connection.
@@ -72,9 +81,11 @@ Now that you have setup the repository correctly, the next thing we will focus o
    npm install
    ```
 
-2. We now need to configure the local environment variables which are required for external services Resuminator uses (like Firebase)
+2. We now need to configure the local environment variables which are required for external services Resuminator uses
+(like Firebase)
 
-   For that in your root folder create a new file named `.env.local` and copy the configuration below to it. Replace the required values with your own account configurations.
+   For that in your root folder create a new file named `.env.local`
+   and copy the configuration below to it. Replace the required values with your own account configurations.
 
    :::note
    The `PORT` in "http://localhost:PORT" is the port at which your backend service is running.
@@ -96,25 +107,31 @@ Now that you have setup the repository correctly, the next thing we will focus o
    NEXT_PUBLIC_MIXPANEL=Mixpanel API Key (Optional) 
    NEXT_PUBLIC_PAPERCUPS=Papercups Account Key (Optional)
    NEXT_PUBLIC_PAPYRUS=Papyrus Server Instance Address (Optional)
-   ``` 
+   ```
 
 :::info
-`NEXT_PUBLIC_MIXPANEL`, `NEXT_PUBLIC_PAPERCUPS`, `NEXT_PUBLIC_PAPYRUS`, and `NEXT_PUBLIC_APP_PROD` are optional configurations which are needed for a production level setup but can be ignored for the development setup.
+`NEXT_PUBLIC_MIXPANEL`, `NEXT_PUBLIC_PAPERCUPS`, `NEXT_PUBLIC_PAPYRUS`, and `NEXT_PUBLIC_APP_PROD` are optional
+configurations whichare needed for a production level setup but can be ignored for the development setup.
 :::
 
 ### Optional Services
 
-* [Mixpanel](https://mixpanel.com) - For performance analytics and collecting other usage statistics. You can setup a new Mixpanel account using the instructions here. Then use your API key as value for `NEXT_PUBLIC_MIXPANEL` environment variable.
+- [Mixpanel](https://mixpanel.com) - For performance analytics and collecting other usage statistics.
+You can setup a new Mixpanel account using the instructions here.
+Then use your API key as value for `NEXT_PUBLIC_MIXPANEL` environment variable.
 
-* [Papercups](https://papercups.io/) - For the in-app chat module. Create a new Papercups account and use your account key as the value for `NEXT_PUBLIC_PAPERCUPS` to setup an in-app chat.
+- [Papercups](https://papercups.io/) - For the in-app chat module. Create a new Papercups account
+and use your account key as the value for `NEXT_PUBLIC_PAPERCUPS` to setup an in-app chat.
 
-* [Papyrus](https://papyrus.resuminator.in/) - For PDF generation and printing the Resume. This is only needed if you wish to download PDFs in a local setup. Once you host your own Papyrus instance on AWS Lambda or Vercel's Serverless Functions, paste the link as the value for `NEXT_PUBLIC_PAPYRUS`
+- [Papyrus](https://papyrus.resuminator.in/) - For PDF generation and printing the Resume.
+This is only needed if you wish to download PDFs in a local setup.
+Once you host your own Papyrus instance on AWS Lambda or Vercel's Serverless Functions, paste the link as the value for `NEXT_PUBLIC_PAPYRUS`
 
 ### Starting the dev instance
 
 Finally once you have your `.env.local` configurations file in place, you can start the frontend using the following command.
 
-```
+```bash
 npm run dev
 ```
 
@@ -130,17 +147,22 @@ You may not need to setup the backend server if you only wish to contribute to t
 
 ## Backend
 
-The repository found at [resuminator/resuminator-server](https://github.com/resuminator/resuminator-server) serves as the codebase for the API server which connects to a MongoDB instance to store and retieve user data.
+The repository found at [resuminator/resuminator-server](https://github.com/resuminator/resuminator-server) serves as the
+codebase for the API server which connects to a MongoDB instance to store and retieve user data.
 
 ### Required Services
 
-- **MongoDB** version = 4.4.9. You can either spin up a local/Docker instance or can use [MongoDB Atlas](https://www.mongodb.com/) (Recommended). We personally use MongoDB Atlas at Resuminator for all of our MongoDB needs.
+- **MongoDB** version = 4.4.9. You can either spin up a local/Docker instance or can use
+[MongoDB Atlas](https://www.mongodb.com/) (Recommended).
+We personally use MongoDB Atlas at Resuminator for all of our MongoDB needs.
 
 - [SendGrid](https://sendgrid.com/) is used for sending email on signup and account deletion.
 
 ### Optional Services
 
-- **PostHog** Account. We use posthog for server-side analytics. You can either use [PostHog Cloud](https://posthog.com/) or set up your [own PostHog](https://github.com/PostHog/posthog) as it is also Open Source.
+- **PostHog** Account. We use posthog for server-side analytics. You can either use
+[PostHog Cloud](https://posthog.com/) or set up your [own PostHog](https://github.com/PostHog/posthog)
+as it is also Open Source.
 
 :::tip
 For all cloud related resources, to have lower write latency select region closer to you.
@@ -148,16 +170,19 @@ For all cloud related resources, to have lower write latency select region close
 _**eg**_. If you are in India
 
 - For Firebase, Choose `asia-south1`.
-- For MongoDB Atlas, Choose either `asia-south1` on **GCP** (_Recommended_) or `ap-south-1` on **AWS** or `centralindia` on **Azure**.
+- For MongoDB Atlas, Choose either `asia-south1` on **GCP** (_Recommended_) or `ap-south-1` on **AWS** or `centralindia`
+on **Azure**.
 - For self-hosted PostHog, you can use same recommendation as that of MongoDB Atlas.
 
 :::
 
 ### Setting up the repository
 
-1. Fork the repository at - [resuminator/resuminator-server](https://github.com/resuminator/resuminator-server) to your GitHub account.
+1. Fork the repository at - [resuminator/resuminator-server](https://github.com/resuminator/resuminator-server)
+to your GitHub account.
 
-2. Then clone the forked repository, by typing the following line in your local terminal/powershell. Remember to replace `<your-username>` with your actual GitHub username.
+2. Then clone the forked repository, by typing the following line in your local terminal/powershell.
+Remember to replace `<your-username>` with your actual GitHub username.
 
    ```bash
    git clone https://github.com/<your-username>/resuminator-server.git
@@ -169,7 +194,8 @@ _**eg**_. If you are in India
    cd resuminator-server
    ```
 
-4. Add remotes to the parent repository. This will help you fetch the code from the parent repo to avoid any merge conflicts later.
+4. Add remotes to the parent repository. This will help you fetch the code from the parent repo to avoid
+any merge conflicts later.
 
    ```bash
    git remote add upstream https://github.com/resuminator/resuminator-server.git
@@ -192,9 +218,10 @@ _**eg**_. If you are in India
 
 ### Configuration
 
-Now that you have setup the backend repository correctly, the next thing we will focus on is how to configure project to start sending requests to the frontend instance.
+Now that you have setup the backend repository correctly, the next thing we will focus on is how to configure
+project to start sending requests to the frontend instance.
 
-1. Install all the dependencies on your local system using the command given below. 
+1. Install all the dependencies on your local system using the command given below.
 
    ```bash
    npm install
@@ -210,7 +237,10 @@ Now that you have setup the backend repository correctly, the next thing we will
    DB_URI=mongodb+srv://username:password@address/dbname
    ```
 
-- Add the following configurations in your `.env` to connect your Firebase account. These values can be found in your Service Account Credential. If You don't have a Firebase Service Account, Navigate to _Project Settings > Service accounts > Generate new private key_.
+- Add the following configurations in your `.env` to connect your Firebase account.
+These values can be found in your Service Account Credential.
+If You don't have a Firebase Service Account,
+Navigate to _Project Settings > Service accounts > Generate new private key_.
 
    ```txt title=".env"
    ...
@@ -244,36 +274,36 @@ Find Dynamic Template for Account Creation & Deletion [here](https://github.com/
 
 ### Optional Configuration
 
-There are some optional configurations which you can specify to have even more control over your backend instance. Add any (or all) of the required configurations in your `.env` file.
+- There are some optional configurations which you can specify to have even more control over your backend instance.
+Add any (or all) of the required configurations in your `.env` file.
 
-```txt title=".env"
-NODE_ENV=specifies the node environment. Default is `development`.
-PORT=At which port you want to run application. Default is `8080`.
-```
+   ```txt title=".env"
+   NODE_ENV=specifies the node environment. Default is `development`.
+   PORT=At which port you want to run application. Default is `8080`.
+   ```
 
-`POSTHOG_API_KEY` is required to send server side analytics to PostHog.
-`POSTHOG_HOST` is required if you have added `POSTHOG_API_KEY`. 
+- `POSTHOG_API_KEY` is required to send server side analytics to PostHog.
+`POSTHOG_HOST` is required if you have added `POSTHOG_API_KEY`.
 You can put self-hosted or PostHog Cloud URL here. Default is `https://app.posthog.com`.
 
-```txt title=".env"
-...
-POSTHOG_API_KEY=is required to send server side analytics to PostHog.
-POSTHOG_HOST=is required if you have added `POSTHOG_API_KEY`.
-```
+   ```txt title=".env"
+   ...
+   POSTHOG_API_KEY=is required to send server side analytics to PostHog.
+   POSTHOG_HOST=is required if you have added `POSTHOG_API_KEY`.
+   ```
 
-You can also alter the limits imposed on the count of objects in the database using the following config values
+- You can also alter the limits imposed on the count of objects in the database using the following config values
 
-|Config Key|Specifies|Default Value|
-|-|-|-|
-|`RESUME_COUNT`|number of max allowed resumes on platform.|3|
-|`EDUCATION_COUNT`|number of max allowed education section on platform.|10|
-|`EXPERIENCE_COUNT`| number of max allowed experience section on platform|10|
-|`PROJECT_COUNT` | number of max allowed project section on platform | 10|
-|`CERTIFICATION_COUNT` | number of max allowed certification section on platform | 10|
-|`PUBLICATION_COUNT`| number of max allowed publication section on platform | 10|
-|`SKILL_COUNT` | number of max allowed skill section on platform |10|
-|`CUSTOM_SECTION_COUNT`| number of max allowed custom section on platform |3|
-
+   |Config Key|Specifies|Default Value|
+   |-|-|-|
+   |`RESUME_COUNT`|number of max allowed resumes on platform.|3|
+   |`EDUCATION_COUNT`|number of max allowed education section on platform.|10|
+   |`EXPERIENCE_COUNT`| number of max allowed experience section on platform|10|
+   |`PROJECT_COUNT` | number of max allowed project section on platform | 10|
+   |`CERTIFICATION_COUNT` | number of max allowed certification section on platform | 10|
+   |`PUBLICATION_COUNT`| number of max allowed publication section on platform | 10|
+   |`SKILL_COUNT` | number of max allowed skill section on platform |10|
+   |`CUSTOM_SECTION_COUNT`| number of max allowed custom section on platform |3|
 
 :::tip
 You can find a basic `.env` file [here](https://github.com/resuminator/resuminator-server/blob/main/templates/.env.template)
@@ -299,4 +329,5 @@ To test, type `localhost:PORT/v0.2.0` in your browser and following output shoul
 }
 ```
 
-**Congratulations!** Your backend is now setup and you are ready to create resumes on your local system (or contribute to Resuminator) 🎉
+**Congratulations!** Your backend is now setup and you are ready to create resumes on your local system
+ (or contribute to Resuminator) 🎉

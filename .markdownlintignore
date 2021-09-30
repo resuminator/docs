@@ -1,0 +1,3 @@
+docs/legal/*.md
+node_modules/
+.docusaurus/
