@@ -4,7 +4,8 @@ sidebar_position: 2
 
 # Quick Start
 
-Getting started with creating your first resume with Resuminator is really easy with only 3 steps! This is a quick start guide for anyone who is new to Resuminator and wants to get started with creating their first resume.
+Getting started with creating your first resume with Resuminator is really easy with only 3 steps!
+This is a quick start guide for anyone who is new to Resuminator and wants to get started with creating their first resume.
 
 ## Pre-requisite  
 
@@ -22,7 +23,8 @@ After logging in to Resuminator you will be taken to the Home tab where you will
 
 ## Step 2
 
-Each resume in Resuminator is created with a default name `Untitled<number>` (where `number` is the index number of the resume on your account, starting with 0) and an icon 📄.
+Each resume in Resuminator is created with a default name `Untitled<number>`
+(where `number` is the index number of the resume on your account, starting with 0) and an icon 📄.
 
 However you can change this to your liking so that you can identify your resumes easily later (and even duplicate them later).
 To do this you need to
