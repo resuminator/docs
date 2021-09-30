@@ -64,9 +64,9 @@ Now that you have setup the repository correctly, the next thing we will focus o
 
 1. Install all the dependencies on your local system using the command given below. 
 
-:::note
-It might take some time depending on your system's speed and internet connection.
-:::
+   :::note
+   It might take some time depending on your system's speed and internet connection.
+   :::
 
    ```bash
    npm install
@@ -76,8 +76,14 @@ It might take some time depending on your system's speed and internet connection
 
    For that in your root folder create a new file named `.env.local` and copy the configuration below to it. Replace the required values with your own account configurations.
 
+   :::note
+   The `PORT` in "http://localhost:PORT" is the port at which your backend service is running.
+
+   If you have a hosted server then enter the link of the hosted server instead of "http://localhost:PORT"
+   :::
+
    ```txt title=".env.local"
-   NEXT_PUBLIC_API_BASE_URL="https://localhost:PORT"
+   NEXT_PUBLIC_API_BASE_URL="http://localhost:PORT"
 
    NEXT_PUBLIC_API_KEY='YOUR_FIREBASE_API_KEY'
    NEXT_PUBLIC_AUTH_DOMAIN='YOUR_FIREBASE_AUTH_DOMAIN'
@@ -95,6 +101,14 @@ It might take some time depending on your system's speed and internet connection
 :::info
 `NEXT_PUBLIC_MIXPANEL`, `NEXT_PUBLIC_PAPERCUPS`, `NEXT_PUBLIC_PAPYRUS`, and `NEXT_PUBLIC_APP_PROD` are optional configurations which are needed for a production level setup but can be ignored for the development setup.
 :::
+
+### Optional Services
+
+* [Mixpanel](https://mixpanel.com) - For performance analytics and collecting other usage statistics. You can setup a new Mixpanel account using the instructions here. Then use your API key as value for `NEXT_PUBLIC_MIXPANEL` environment variable.
+
+* [Papercups](https://papercups.io/) - For the in-app chat module. Create a new Papercups account and use your account key as the value for `NEXT_PUBLIC_PAPERCUPS` to setup an in-app chat.
+
+* [Papyrus](https://papyrus.resuminator.in/) - For PDF generation and printing the Resume. This is only needed if you wish to download PDFs in a local setup. Once you host your own Papyrus instance on AWS Lambda or Vercel's Serverless Functions, paste the link as the value for `NEXT_PUBLIC_PAPYRUS`
 
 ### Starting the dev instance
 
