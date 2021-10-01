@@ -10,19 +10,13 @@ hosted by DigitalOcean for the 8th year in a row. 🥳
 We invite all developers and designers to contribute to Resuminator this October 2021 by opening new
 [issues](https://github.com/resuminator/resuminator/issues),
 sharing your thoughts in our [discussions](https://github.com/resuminator/resuminator/discussions),
-or by submitting a pull request (PR) against any [Hacktoberfest labeled issue]
-(<https://github.com/resuminator/resuminator/issues?q=is%3Aopen+is%3Aissue+label%3AHacktoberfest>) 🙌🏻
+or by submitting a pull request (PR) against any Hacktoberfest labeled
+[issue](<https://github.com/resuminator/resuminator/issues?q=is%3Aopen+is%3Aissue+label%3AHacktoberfest>) 🙌🏻
 
 ## How can I participate?
 
 First of all we are super glad to see your interest in participating in this year's Hacktoberfest with us.
-
-* If you are a **beginner** with little knowledge of open-source contributions,
-jump to the [Contributing as a Beginner](#contribute-as-a-beginner) section.
-* If you have participated in previous year's Hacktoberfest, you may know the challenge rules,
-start by reading the [Intermediate Contribution](#intermediate-contributions) section
-* If you believe you are a Pro with open-source contributions and are very well versed with our whole
-[tech-stack](/docs/developer-guide/tech-stack), jump to the [Pro Contributions](#pro-contributions) section
+We have different levels of issues and multiple ways of contributing to our codebase.
 
 :::info
 If you have never used Resuminator before, we would **highly recommend**
@@ -31,9 +25,7 @@ If you have never used Resuminator before, we would **highly recommend**
 We would only accept contributions from developer who have an account on Resuminator.
 :::
 
-## Contribute as a Beginner
-
-We really appreciate your interest to contribute to Resuminator. We accept code contributions on mainly three repositories
+We accept code contributions on mainly three repositories
 
 * [resuminator](https://github.com/resuminator/resuminator) - The main web-app and website codebase.
 * [resuminator-server](https://github.com/resuminator/resuminator-server) -
@@ -46,12 +38,39 @@ For a quick overview of **tech stack** - we use React, Next JS, TypeScript, Node
 packages which you may read about [here](/docs/developer-guide/tech-stack)
 :::
 
+## Understanding Issue Levels
+
+We have different labels on our issues that signify what is the issue related to.
+For Hacktoberfest you need to contribute to issues with the Hacktoberfest label and then select the issues
+according to the difficulty
+
+|Level| Description|
+|-|-|
+|Level 1 |Easy issues, minor typo fixes, documentation lines etc. **(reserved for beginners)**|
+|Level 2|Patches - which do not require you to understand the codebase|
+|Level 3|Bug Fixes for some modules of the app|
+|Level 4| Adding new feature or functionality to existing code (frontend, website, backend, docs)|
+|Level 5|Designing and developing a new feature/functionality along with documentation|
+
+## Getting Started
+
+:::info
+
+### Pre-requisites
+
+✅ You must have a Resuminator account  
+✅ You have set up the front-end and backend with the required components  
+✅ You have read the Contribution Guide  
+✅ You have some prior knowledge of some part of our tech stack (for Level 3+ issues)  
+:::
+
 Now the main challenges which you might face while starting could be -
 
 1. **Setting up a development environment.**
 
 Setting up a local environment could be a little challenging at the start, but at the same time we'd argue that
-it's a one-time thing. Follow the steps in a systematic order in our Development Setup guide to get your local
+it's a one-time thing. Follow the steps in a systematic order in our
+[Development Setup guide](/docs/developer-guide/setting-up) to get your local
 instance of Resuminator running to start making contributions.
 
 1. **Getting familiar with the codebase.**
@@ -60,6 +79,10 @@ Every developer has a different way of reading though the codebase, but if you a
 Reading the Codebase guide to get familiar with our codebase.
 It will help you develop a mental model to navigate through enormous codebases and not get lost between the lines.
 
-## Intermediate Contributions
+## Adding new issues
 
-## Pro Contributions
+You can also play you part in contributing to our codebase by opening good issues which you faced while using Resuminator
+Refer to this guide on [Reporting Bugs](/docs/developer-guide/contributing#reporting-bugs) to know more about the same.
+
+We really appreciate high-quality bug reports and respect the developers who submit them. You can be one of such developers
+by reading this guide on [Submitting Good Bug Reports](/docs/developer-guide/contributing#how-do-i-submit-a-good-bug-report)
