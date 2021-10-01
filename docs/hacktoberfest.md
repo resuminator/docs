@@ -86,3 +86,13 @@ Refer to this guide on [Reporting Bugs](/docs/developer-guide/contributing#repor
 
 We really appreciate high-quality bug reports and respect the developers who submit them. You can be one of such developers
 by reading this guide on [Submitting Good Bug Reports](/docs/developer-guide/contributing#how-do-i-submit-a-good-bug-report)
+
+## Doubts and Queries?
+
+In case of any doubts or queries, feel free to tag any of our maintainers on any of the GitHub issues for their domain.
+
+[@viveknigam3003](https://github.com/viveknigam3003) - Frontend, Website, Design, General Issues  
+[@merrcury](https://github.com/merrcury) - Backend, DevOps, Dev Setup, Docs
+
+If you want to reach out to us, you can also ping us on Twitter [@resuminator](https://twitter.com/resuminator)
+OR reach out to us on our Discord Server using [discord.resuminator.in](https://discord.resuminator.in)
