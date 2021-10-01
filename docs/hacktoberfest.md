@@ -10,8 +10,7 @@ hosted by DigitalOcean for the 8th year in a row. 🥳
 We invite all developers and designers to contribute to Resuminator this October 2021 by opening new
 [issues](https://github.com/resuminator/resuminator/issues),
 sharing your thoughts in our [discussions](https://github.com/resuminator/resuminator/discussions),
-or by submitting a pull request (PR) against any [Hacktoberfest labeled issue]
-(<https://github.com/resuminator/resuminator/issues?q=is%3Aopen+is%3Aissue+label%3AHacktoberfest>) 🙌🏻
+or by submitting a pull request (PR) against any [Hacktoberfest labeled issue](<https://github.com/resuminator/resuminator/issues?q=is%3Aopen+is%3Aissue+label%3AHacktoberfest>) 🙌🏻
 
 ## How can I participate?
 
