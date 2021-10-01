@@ -4,13 +4,16 @@ sidebar-position: 2
 
 # Tech Stack
 
-Resuminator from the outside may look like a simple piece of software but the machinery underneath it sophisticated enough to provide you a smooth user experience and seamleass resume building experience.
+Resuminator from the outside may look like a simple piece of software but the machinery underneath it sophisticated
+enough to provide you a smooth user experience and seamleass resume building experience.
 
-We develop and deploy our products with a variety of frameworks and tools. You can find the tech stack related to different repositories below.
+We develop and deploy our products with a variety of frameworks and tools. You can find the tech stack related to
+different repositories below.
 
 ## resuminator
 
-Found at [resuminator/resuminator](https://github.com/resuminator/resuminator), this repository holds the code for the Resuminator webapp and its website.
+Found at [resuminator/resuminator](https://github.com/resuminator/resuminator),
+this repository holds the code for the Resuminator webapp and its website.
 
 **Programming Language** - TypeScript v4
 
@@ -24,7 +27,8 @@ Found at [resuminator/resuminator](https://github.com/resuminator/resuminator), 
 |[Zustand](https://github.com/pmndrs/zustand)|^3.5.1|State Management Library|
 |[Axios](https://github.com/axios/axios)|^0.21.3|HTTP Client for requests|
 
-Apart from this primary tech stack, we use several other libraries to achieve specific functionality which you may find around the codebase.
+Apart from this primary tech stack, we use several other libraries to achieve specific functionality which
+you may find around the codebase.
 
 * [Fontsource](https://fontsource.org/) - Font asset management
 * [MUI](https://mui.com/) (formerly - Material UI) - Date-Time pickers
@@ -36,7 +40,8 @@ Apart from this primary tech stack, we use several other libraries to achieve sp
 
 ## resuminator-server
 
-Found at [resuminator/resuminator-server](https://github.com/resuminator/resuminator-server), serves as the primary backend API server for fetching and updating user data.
+Found at [resuminator/resuminator-server](https://github.com/resuminator/resuminator-server),
+serves as the primary backend API server for fetching and updating user data.
 
 **Programming Language** - TypeScript v4
 
@@ -55,14 +60,18 @@ Apart from this we use two primary third-party services
 
 ## docs
 
-Found at [resuminator/docs](https://github.com/resuminator/docs), serves as the codebase for the documentation and Wiki for Resuminator and its products.
+Found at [resuminator/docs](https://github.com/resuminator/docs), serves as the codebase for the documentation and Wiki
+for Resuminator and its products.
 
 **Framework Used** - [Docusaurus v2](https://docusaurus.io/docs)
 
 ## Hosting
 
-* Our frontend is completely hosted on [Vercel](https://vercel.com/), because it is hands down the best hosting solution for any Next JS website/app.
+* Our frontend is completely hosted on [Vercel](https://vercel.com/), because it is hands down the best hosting solution
+ for any Next JS website/app.
 
-* Resuminator Server is currently hosted on [Heroku](http://www.heroku.com/), which provides a decent and free hosting solution for our needs.
+* Resuminator Server is currently hosted on [Heroku](http://www.heroku.com/), which provides a decent and
+free hosting solution for our needs.
 
-* Docs are hosted on [Netlify](https://www.netlify.com/) which is another brilliant hosting solution for all the JAMStack websites and otherwise
+* Docs are hosted on [Netlify](https://www.netlify.com/) which is another brilliant hosting solution for all the
+JAMStack websites and otherwise
