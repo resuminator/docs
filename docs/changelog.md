@@ -4,7 +4,16 @@ sidebar_position: 7
 
 # Changelog
 
-## v2.1.1🚀 
+## v2.1.2 
+
+### 🆕 Features
+* Made Papercups and Mixpanel as Optional Dependencies
+
+### ☑️ Patches
+* Updated Hacktoberfest Page broken Links
+* Fixed App & Website SEO
+
+## v2.1.1
 
 ### 🆕 Features
 * Added Hacktoberfest 2021 Page
