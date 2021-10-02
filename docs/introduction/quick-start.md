@@ -1,13 +1,9 @@
----
-sidebar_position: 2
----
-
 # Quick Start
 
 Getting started with creating your first resume with Resuminator is really easy with only 3 steps!
 This is a quick start guide for anyone who is new to Resuminator and wants to get started with creating their first resume.
 
-## Pre-requisite  
+## Pre-requisite
 
 For this you will need a Resuminator account which you can create using Google or Email [here](https://www.resuminator.in/signup)
 
@@ -15,9 +11,9 @@ For this you will need a Resuminator account which you can create using Google o
 
 After logging in to Resuminator you will be taken to the Home tab where you will find a card to create a new resume.
 
-* Click on Create New Resume
-* Select Start from Scratch. This will create a new blank resume with some default settings.
-* Profit! 🎉 Your new resume is ready to be edited!
+- Click on Create New Resume
+- Select Start from Scratch. This will create a new blank resume with some default settings.
+- Profit! 🎉 Your new resume is ready to be edited!
 
 ![new_resume](/gifs/new_resume.gif)
 
@@ -29,9 +25,9 @@ Each resume in Resuminator is created with a default name `Untitled<number>`
 However you can change this to your liking so that you can identify your resumes easily later (and even duplicate them later).
 To do this you need to
 
-* Click on the resume name (here, `Untitled0`) to open the editing popup.
-* Type in a name and select an icon for this resume.
-* Profit! 🎉 Now your resume has a new name and icon.
+- Click on the resume name (here, `Untitled0`) to open the editing popup.
+- Type in a name and select an icon for this resume.
+- Profit! 🎉 Now your resume has a new name and icon.
 
 :::info
 Two confirmation messages appear, confirming that both the changes are saved.

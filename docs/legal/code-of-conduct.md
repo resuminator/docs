@@ -1,8 +1,6 @@
----
-sidebar_position: 5
----
+# Contributor Covenant Code of Conduct
 
-# Code of Conduct
+Last updated: October 2, 2021
 
 ## Our Pledge
 

@@ -1,8 +1,4 @@
----
-sidebar_position: 6
----
-
-# CLA
+# Individual Contributor License Agreement
 
 Last updated: October 2, 2021
 

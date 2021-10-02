@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # GDPR
 
 Last updated: August 31, 2021
@@ -37,6 +33,7 @@ C. Sensitive Personal Information (SPI): Such as biometrics, genetic data, sexua
 To ensure that our customers are aware of why all the information is being collected, we have enabled; explicit consent; which has to be obtained from customers before processing their information. Moreover, our privacy policy clearly states ‘what’, ‘why’; and ‘how’; customers personal data is processed.
 
 ## Data Subject Rights
+
 Resuminator has implemented processes to acknowledge and respect Data Subject Rights. A data subject can email us at “conduct@resuminator.in” and request to exercise Data Subject Rights. Since Resuminator is both Data controller and Data Processor (processing data at the behest of Data Controllers), the verification authority to validate the Customers Data Subject Right request is decided basis the origin of transaction.
 
 **Data Subject Rights consist of:**
