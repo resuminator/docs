@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Welcome to Resuminator
 
 Welcome to the official documentation and wiki of Resuminator. The articles here shall guide you through using

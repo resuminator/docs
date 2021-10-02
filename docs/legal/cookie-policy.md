@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Cookies Policy
 
 Last updated: August 31, 2021

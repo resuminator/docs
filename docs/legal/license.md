@@ -1,6 +1,3 @@
----
-sidebar-position: 3
----
 # License
 
 ```text

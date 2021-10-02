@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Hacktoberfest 2021
 
 Resuminator is participating in [Hacktoberfest 2021](https://hacktoberfest.digitalocean.com/),
@@ -11,7 +7,7 @@ We invite all developers and designers to contribute to Resuminator this October
 [issues](https://github.com/resuminator/resuminator/issues),
 sharing your thoughts in our [discussions](https://github.com/resuminator/resuminator/discussions),
 or by submitting a pull request (PR) against any Hacktoberfest labeled
-[issue](<https://github.com/resuminator/resuminator/issues?q=is%3Aopen+is%3Aissue+label%3AHacktoberfest>) 🙌🏻
+[issue](https://github.com/resuminator/resuminator/issues?q=is%3Aopen+is%3Aissue+label%3AHacktoberfest) 🙌🏻
 
 ## How can I participate?
 
@@ -27,11 +23,11 @@ We would only accept contributions from developer who have an account on Resumin
 
 We accept code contributions on mainly three repositories
 
-* [resuminator](https://github.com/resuminator/resuminator) - The main web-app and website codebase.
-* [resuminator-server](https://github.com/resuminator/resuminator-server) -
-The backend code which handles the data retrieval for the app.
-* [docs](https://github.com/resuminator/docs) - Documentation and Wiki for Resuminator and its products
-(The line you are reading comes from this codebase)
+- [resuminator](https://github.com/resuminator/resuminator) - The main web-app and website codebase.
+- [resuminator-server](https://github.com/resuminator/resuminator-server) -
+  The backend code which handles the data retrieval for the app.
+- [docs](https://github.com/resuminator/docs) - Documentation and Wiki for Resuminator and its products
+  (The line you are reading comes from this codebase)
 
 :::note
 For a quick overview of **tech stack** - we use React, Next JS, TypeScript, Node JS and MongoDB along with other
@@ -44,13 +40,13 @@ We have different labels on our issues that signify what is the issue related to
 For Hacktoberfest you need to contribute to issues with the Hacktoberfest label and then select the issues
 according to the difficulty
 
-|Level| Description|
-|-|-|
-|Level 1 |Easy issues, minor typo fixes, documentation lines etc. **(reserved for beginners)**|
-|Level 2|Patches - which do not require you to understand the codebase|
-|Level 3|Bug Fixes for some modules of the app|
-|Level 4| Adding new feature or functionality to existing code (frontend, website, backend, docs)|
-|Level 5|Designing and developing a new feature/functionality along with documentation|
+| Level   | Description                                                                             |
+| ------- | --------------------------------------------------------------------------------------- |
+| Level 1 | Easy issues, minor typo fixes, documentation lines etc. **(reserved for beginners)**    |
+| Level 2 | Patches - which do not require you to understand the codebase                           |
+| Level 3 | Bug Fixes for some modules of the app                                                   |
+| Level 4 | Adding new feature or functionality to existing code (frontend, website, backend, docs) |
+| Level 5 | Designing and developing a new feature/functionality along with documentation           |
 
 ## Getting Started
 

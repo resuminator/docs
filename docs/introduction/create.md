@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Create Panel
 
 The create panel is the place where you get to edit the details inside your resume.
