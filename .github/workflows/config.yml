@@ -1,0 +1,11 @@
+newPRWelcomeComment: |
+  Thanks for going the extra mile and opening this PR! 
+  
+  ![toast](https://media.giphy.com/media/8Iv5lqKwKsZ2g/giphy.gif)
+  
+  Make sure to complete PR Template and Read our [Contributing Guidelines](https://docs.resuminator.in/docs/developer-guide/contributing)! 
+  
+firstPRMergeComment: |
+  Congrats on merging your first pull request! We here at Resuminator are proud of you! 
+  
+  ![congrats](https://media.giphy.com/media/3oz8xAFtqoOUUrsh7W/giphy.gif)
