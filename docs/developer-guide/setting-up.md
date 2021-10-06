@@ -156,13 +156,13 @@ codebase for the API server which connects to a MongoDB instance to store and re
 [MongoDB Atlas](https://www.mongodb.com/) (Recommended).
 We personally use MongoDB Atlas at Resuminator for all of our MongoDB needs.
 
-- [SendGrid](https://sendgrid.com/) is used for sending email on signup and account deletion.
-
 ### Optional Services
 
-- **PostHog** Account. We use posthog for server-side analytics. You can either use
+- [**PostHog**](https://posthog.com/) Account. We use posthog for server-side analytics. You can either use
 [PostHog Cloud](https://posthog.com/) or set up your [own PostHog](https://github.com/PostHog/posthog)
 as it is also Open Source.
+
+- [**SendGrid**](https://sendgrid.com/) is used for sending email on signup and account deletion.
 
 :::tip
 For all cloud related resources, to have lower write latency select region closer to you.
@@ -256,22 +256,6 @@ Navigate to _Project Settings > Service accounts > Generate new private key_.
    FIREBASE_CLIENT_X509_CERT_URL=
    ```
 
-- Setup a Send Grid account and use add the following configurations to connect to Send Grid.
-
-   ```txt title=".env"
-   ...
-   SG_API=API key provided by SendGrid
-   SG_DEL_ACC=Email from which you want to send notification email.
-   SG_EMAIL=Unique dynamic template id for Account Deletion Email.
-   SG_NEW_ACC=Unique dynamic template id for Account Creation Email.
-   ```
-
-:::tip
-
-Find Dynamic Template for Account Creation & Deletion [here](https://github.com/resuminator/resuminator-server/tree/main/templates).
-
-:::
-
 ### Optional Configuration
 
 - There are some optional configurations which you can specify to have even more control over your backend instance.
@@ -291,6 +275,22 @@ You can put self-hosted or PostHog Cloud URL here. Default is `https://app.posth
    POSTHOG_API_KEY=is required to send server side analytics to PostHog.
    POSTHOG_HOST=is required if you have added `POSTHOG_API_KEY`.
    ```
+
+- Setup a Send Grid account and use add the following configurations to connect to Send Grid.
+
+   ```txt title=".env"
+   ...
+   SG_API=API key provided by SendGrid
+   SG_DEL_ACC=Email from which you want to send notification email.
+   SG_EMAIL=Unique dynamic template id for Account Deletion Email.
+   SG_NEW_ACC=Unique dynamic template id for Account Creation Email.
+   ```
+
+:::tip
+
+Find Dynamic Template for Account Creation & Deletion [here](https://github.com/resuminator/resuminator-server/tree/main/templates).
+
+:::
 
 - You can also alter the limits imposed on the count of objects in the database using the following config values
 
