@@ -87,11 +87,11 @@ your frontend for it to be up and running and ready to receive requests from the
    For that in your root folder create a new file named `.env.local`
    and copy the configuration below to it. Replace the required values with your own account configurations.
 
-   :::note
-   The `PORT` in "http://localhost:PORT" is the port at which your backend service is running.
+:::note
+The `PORT` in "http://localhost:PORT" is the port at which your backend service is running.
 
-   If you have a hosted server then enter the link of the hosted server instead of "http://localhost:PORT"
-   :::
+If you have a hosted server then enter the link of the hosted server instead of "http://localhost:PORT"
+:::
 
    ```txt title=".env.local"
    NEXT_PUBLIC_API_BASE_URL="http://localhost:PORT"
