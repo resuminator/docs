@@ -14,10 +14,10 @@ You can have a look at the whole [tech stack](/docs/developer-guide/tech-stack) 
 - [Node.js](https://nodejs.org/en/download/) version >= 14 or above (which can be checked by running `node -v`).
 You can use nvm for managing multiple Node versions on a single machine installed.
 
-```bash
-$ node -v
-v14.15.1
-```
+   ```bash
+   $ node -v
+   v14.15.1
+   ```
 
 - [Firebase](https://firebase.google.com/) Account, We use firebase for authentication and storing media files.
 So, It is required to have a firebase account ready.
@@ -111,7 +111,7 @@ If you have a hosted server then enter the link of the hosted server instead of 
 
 :::info
 `NEXT_PUBLIC_MIXPANEL`, `NEXT_PUBLIC_PAPERCUPS`, `NEXT_PUBLIC_PAPYRUS`, and `NEXT_PUBLIC_APP_PROD` are optional
-configurations whichare needed for a production level setup but can be ignored for the development setup.
+configurations which are needed for a production level setup but can be ignored for the development setup.
 :::
 
 ### Optional Services
@@ -148,7 +148,7 @@ You may not need to setup the backend server if you only wish to contribute to t
 ## Backend
 
 The repository found at [resuminator/resuminator-server](https://github.com/resuminator/resuminator-server) serves as the
-codebase for the API server which connects to a MongoDB instance to store and retieve user data.
+codebase for the API server which connects to a MongoDB instance to store and retrieve user data.
 
 ### Required Services
 
@@ -294,16 +294,16 @@ Find Dynamic Template for Account Creation & Deletion [here](https://github.com/
 
 - You can also alter the limits imposed on the count of objects in the database using the following config values
 
-   |Config Key|Specifies|Default Value|
-   |-|-|-|
-   |`RESUME_COUNT`|number of max allowed resumes on platform.|3|
-   |`EDUCATION_COUNT`|number of max allowed education section on platform.|10|
-   |`EXPERIENCE_COUNT`| number of max allowed experience section on platform|10|
-   |`PROJECT_COUNT` | number of max allowed project section on platform | 10|
-   |`CERTIFICATION_COUNT` | number of max allowed certification section on platform | 10|
-   |`PUBLICATION_COUNT`| number of max allowed publication section on platform | 10|
-   |`SKILL_COUNT` | number of max allowed skill section on platform |10|
-   |`CUSTOM_SECTION_COUNT`| number of max allowed custom section on platform |3|
+   | Config Key             | Specifies                                               | Default Value |
+   | ---------------------- | ------------------------------------------------------- | ------------- |
+   | `RESUME_COUNT`         | number of max allowed resumes on platform.              | 3             |
+   | `EDUCATION_COUNT`      | number of max allowed education section on platform.    | 10            |
+   | `EXPERIENCE_COUNT`     | number of max allowed experience section on platform    | 10            |
+   | `PROJECT_COUNT`        | number of max allowed project section on platform       | 10            |
+   | `CERTIFICATION_COUNT`  | number of max allowed certification section on platform | 10            |
+   | `PUBLICATION_COUNT`    | number of max allowed publication section on platform   | 10            |
+   | `SKILL_COUNT`          | number of max allowed skill section on platform         | 10            |
+   | `CUSTOM_SECTION_COUNT` | number of max allowed custom section on platform        | 3             |
 
 :::tip
 You can find a basic `.env` file [here](https://github.com/resuminator/resuminator-server/blob/main/templates/.env.template)
