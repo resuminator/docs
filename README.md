@@ -1,6 +1,7 @@
 # Resuminator Docs
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5ca085a8-ba97-40e7-b29d-2b649e51e029/deploy-status)](https://app.netlify.com/sites/r8-docs/deploys)
+[![CI](https://github.com/resuminator/docs/actions/workflows/main.yml/badge.svg)](https://github.com/resuminator/docs/actions/workflows/main.yml)
 
 This repository contains Resuminator Documentation hosted [here](https://docs.resuminator.in/). Documentation uses
 [Docusaurus](https://docusaurus.io/) at its core. For basic functionality and work around, Do check out Docusaurus.
