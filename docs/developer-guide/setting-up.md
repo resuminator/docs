@@ -331,3 +331,66 @@ To test, type `localhost:PORT/v0.2.0` in your browser and following output shoul
 
 **Congratulations!** Your backend is now setup and you are ready to create resumes on your local system
  (or contribute to Resuminator) 🎉
+
+## Documentation
+
+The repository found at [resuminator/docs](https://github.com/resuminator/docs) serves as the
+codebase for documentation of Resuminator and its products. The current line is also written in the same codebase.
+
+### Setting up the repository
+
+1. Fork the repository at - [resuminator/docs](https://github.com/resuminator/docs)
+to your GitHub account.
+
+2. Then clone the forked repository, by typing the following line in your local terminal/powershell.
+Remember to replace `<your-username>` with your actual GitHub username.
+
+   ```bash
+   git clone https://github.com/<your-username>/docs.git
+   ```
+
+3. Navigate to the cloned repository on your local system
+
+   ```bash
+   cd resuminator-server
+   ```
+
+4. Add remotes to the parent repository. This will help you fetch the code from the parent repo to avoid
+any merge conflicts later.
+
+   ```bash
+   git remote add upstream https://github.com/resuminator/docs.git
+   ```
+
+   To verify, use the command `git remote -v` to check if you have two remotes - origin and upstream set up.
+
+   ```bash
+   origin  https://github.com/<your-username>/docs.git (fetch)     
+   origin  https://github.com/<your-username>/docs.git (push)      
+   upstream        https://github.com/resuminator/docs.git (fetch)
+   upstream        https://github.com/resuminator/docs.git (push) 
+   ```
+
+5. Finally, fetch the upstream's latest code from the main branch.
+
+   ```bash
+   git fetch upstream main
+   ```
+
+### Starting the dev instance
+
+Once your repo is ready and configured, install all the required dependencies by running the following command
+in your terminal
+
+```bash
+npm install
+```
+
+And when the install finishes, run the local instance by using
+
+```bash
+npm start
+```
+
+This will start a local instance to serve the docs in your browser. Here you can monitor your changes live when
+you make them.
