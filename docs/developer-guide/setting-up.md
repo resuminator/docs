@@ -352,7 +352,7 @@ Remember to replace `<your-username>` with your actual GitHub username.
 3. Navigate to the cloned repository on your local system
 
    ```bash
-   cd resuminator-server
+   cd docs
    ```
 
 4. Add remotes to the parent repository. This will help you fetch the code from the parent repo to avoid
