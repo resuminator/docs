@@ -71,7 +71,7 @@ instance of Resuminator running to start making contributions.
 
 1. **Getting familiar with the codebase.**
 
-Every developer has a different way of reading though the codebase, but if you are new to this you can go through our
+Every developer has a different way of reading through the codebase, but if you are new to this you can go through our
 Reading the Codebase guide to get familiar with our codebase.
 It will help you develop a mental model to navigate through enormous codebases and not get lost between the lines.
 
