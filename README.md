@@ -65,6 +65,15 @@ to work on your machine and render that beautiful docs.
   ```
 
   It should be running at Port 3000.
+  
+### Creating a pull request  
+- Make your edits and save
+- Run ```git add .```
+- Run ```git commit -m "Commit message goes here"```
+- Finally, run ```git push origin [your branch name goes here]```
+- Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
+- Wait for your new PR to be reviewed and merged!
+  
 
 ## Contributing
 
