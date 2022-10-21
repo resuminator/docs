@@ -68,17 +68,12 @@ to work on your machine and render that beautiful docs.
   
 ### Creating a pull request  
 
-- Make your edits and save
-- Run ```git add .```
-- Run ```git commit -m "Commit message goes here"```
-- Finally, run ```git push origin [your branch name goes here]```
-- Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
-- For more detais, click [here](https://opensource.com/article/19/7/create-pull-request-github)
+- To create a pull request, check [this](https://opensource.com/article/19/7/create-pull-request-github) out
 
 ### Steps to check out the Markdownlinting issues
 
 - The ```markdownlint``` is a static analysis tool for Node.js with a library of rules to enforce standards.
-- To install as a npm package use ```npm install markdownlint --save-dev```
+- To install as a npm package use ```npm install -g markdownlint-cli```
 - For more details, click [here](https://www.npmjs.com/package/markdownlint)
 
 ## Contributing
