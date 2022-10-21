@@ -73,8 +73,14 @@ to work on your machine and render that beautiful docs.
 - Run ```git commit -m "Commit message goes here"```
 - Finally, run ```git push origin [your branch name goes here]```
 - Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
-- Wait for your new PR to be reviewed and merged!
-  
+- For more detais, click [here](https://opensource.com/article/19/7/create-pull-request-github)
+
+### Steps to check out the Markdownlinting issues
+
+- The ```markdownlint``` is a static analysis tool for Node.js with a library of rules to enforce standards.
+- To install as a npm package use ```npm install markdownlint --save-dev```
+- For more details, click [here](https://www.npmjs.com/package/markdownlint)
+
 ## Contributing
 
 All the current issues are being tracked in an [Umbrella Issue](https://github.com/resuminator/resuminator/issues/99).
