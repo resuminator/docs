@@ -72,9 +72,8 @@ to work on your machine and render that beautiful docs.
 
 ### Steps to check out the Markdownlinting issues
 
-- The ```markdownlint``` is a static analysis tool for Node.js with a library of rules to enforce standards.
-- To install as a npm package use ```npm install -g markdownlint-cli```
-- For more details, click [here](https://www.npmjs.com/package/markdownlint)
+- To install as a npm package use `npm install -g markdownlint-cli`
+- To run use `markdownlint '**/*.md'`
 
 ## Contributing
 
