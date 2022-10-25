@@ -1,7 +1,8 @@
 # Hacktoberfest 2022
 
 Resuminator is participating again in [Hacktoberfest 2022](https://hacktoberfest.digitalocean.com/),
-hosted by DigitalOcean, AppWrite, and Docker to promote the spirit of open-source in the developer and designer community 🥳
+hosted by DigitalOcean, AppWrite, and Docker to promote the spirit
+of open-source in the developer and designer community 🥳
 
 We invite all developers and designers to contribute to Resuminator this October 2022 by opening new
 [issues](https://github.com/resuminator/resuminator/issues),
