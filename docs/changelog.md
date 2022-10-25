@@ -87,7 +87,7 @@ performance and usability it fixes a lot of bugs from Version 1 (now legacy)
 - **Custom Sections** - Create your own custom section in few clicks and use it like any native section for your resume.
 - **Multiple Resumes** - Multiple Resumes for a single account. Duplicate existing or create new.
 - **One/Two Columns** - Toggle resume layout between one or two-column
-- **Social Handles** - GitHub, GitLab, LinkedIn, Twitter, Youtube, Behance, Dribbble, etc. Or add your own custom section
+- **Social Handles** - GitHub, GitLab, LinkedIn, Twitter, YouTube, Behance, Dribbble, etc. Or add your own custom section
 - **Detailed Sections** - Researched sections to put in all the information you need.
 - **Rich Text Editor** - With Markdown shortcuts and Grammarly Integration.
 - **Profile Images** - All resumes come with native support to add photos
