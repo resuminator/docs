@@ -28,6 +28,18 @@ module.exports = {
     },
     {
       type: "category",
+      label: "User Guide",
+      collapsed: false,
+      items: [
+        {
+          type: "doc",
+          label: "Home",
+          id: "user-guide/home-page",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Developer Guide",
       collapsed: false,
       items: [
