@@ -33,11 +33,6 @@ module.exports = {
       items: [
         {
           type: "doc",
-          label: "Home",
-          id: "user-guide/home-page",
-        },
-        {
-          type: "doc",
           label: "Create",
           id: "user-guide/create-page",
         },
