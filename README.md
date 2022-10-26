@@ -65,6 +65,15 @@ to work on your machine and render that beautiful docs.
   ```
 
   It should be running at Port 3000.
+  
+### Creating a pull request  
+
+- To create a pull request, check [this](https://opensource.com/article/19/7/create-pull-request-github) out
+
+### Steps to check out the Markdownlinting issues
+
+- To install as a npm package use `npm install -g markdownlint-cli`
+- To run use `markdownlint '**/*.md'`
 
 ## Contributing
 
