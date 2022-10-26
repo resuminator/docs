@@ -16,7 +16,7 @@ The following is a set of guidelines for contributing to three primary repositor
 [resuminator/resuminator-server](https://github.com/resuminator/resuminator-server),
 [resuminator/docs](https://github.com/resuminator/docs)
 which are hosted in the [Resuminator Organization](https://github.com/resuminator/) on GitHub.
-Although most of guidelines would be same across all qualifiying repositories and excepts would been mentioned properly.
+Although most of the guidelines would be same across all qualifying repositories and excepts would been mentioned properly.
 These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes
 to this document in a pull request.
 
@@ -33,7 +33,7 @@ Here's a few ideas to get started:
 - Start using Resuminator! Go through the [Quick Start](/docs/introduction/quick-start) guides.
   Does everything work as expected? If not, we're always looking for improvements. Let us know by opening an issue.
 
-- Help us making the docs better. File an issue if you find anything that is confusing or can be improved. We also have
+- Help us make the docs better. File an issue if you find anything that is confusing or can be improved. We also have
   an [umbrella issue for docs](https://github.com/resuminator/resuminator/issues/99) where we are planning and working on
   all docs. You may adopt a doc piece there to work on.
 
@@ -217,7 +217,7 @@ Please follow these steps to have your contribution considered by the maintainer
 
 1. **Copyright header for source code**
 
-   Copy & Paste Copyright header on top of every new file while contrinbuting to resuminator/resuminator and
+   Copy & Paste Copyright header on top of every new file while contributing to resuminator/resuminator and
    resuminator/resuminator-server. You can find respective header in respective repositories.
 
 1. **Contributor License Agreement (CLA)**
