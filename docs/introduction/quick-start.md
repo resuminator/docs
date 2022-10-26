@@ -46,4 +46,4 @@ Click on the resume you just created to open the Create tab to start editing you
 Resuminator autosaves your data!
 :::
 
-Continue reading about the Create section on the next page.
+Continue reading about all sections on User Guide page.
