@@ -5,7 +5,7 @@ sidebar-position: 2
 # Tech Stack
 
 Resuminator from the outside may look like a simple piece of software but the machinery underneath it sophisticated
-enough to provide you a smooth user experience and seamleass resume building experience.
+enough to provide you a smooth user experience and seamless resume building experience.
 
 We develop and deploy our products with a variety of frameworks and tools. You can find the tech stack related to
 different repositories below.

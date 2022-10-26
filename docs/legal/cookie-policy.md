@@ -47,7 +47,7 @@ Purpose: These Cookies allow us to remember choices you make when You use the We
 **Analytics Cookies**  
 Type: Statistics  
 Adminsitered by: Mixpanel  
-Purpose: These Cookies allow us to track crash reports, performerance issues, user traffice on the website. They help us keep improving services and to check for reported instance and making a better experience for everyone.
+Purpose: These Cookies allow us to track crash reports, performance issues, user traffic on the website. They help us keep improving services and to check for reported instance and making a better experience for everyone.
 
 ### Your Choices Regarding Cookies
 
