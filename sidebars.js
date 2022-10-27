@@ -29,7 +29,7 @@ module.exports = {
     {
       type: "category",
       label: "User Guide",
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           type: "doc",
