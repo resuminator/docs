@@ -30,12 +30,12 @@ The Home page can be divided into the following various parts to understand it b
 
 ## Main Space
 
-This the main area where you can add and delete resumes and edit their name / icon by clicking on the name.
+This the main area where you can add and delete resumes and edit their name/icon by clicking on the name.
 
 ### From Scratch
 
-> If you are creating a resume for the first time, you should refer to our
-> [Quick Start](/introduction/quick-start.md) guide.
+If you are creating a resume for the first time, you should refer to our
+[Quick Start](/introduction/quick-start.md) guide.
 
 ### Existing
 
