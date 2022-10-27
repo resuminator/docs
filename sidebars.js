@@ -38,6 +38,11 @@ module.exports = {
         },
         {
           type: "doc",
+          label: "Design",
+          id: "user-guide/design-page",
+        },
+        {
+          type: "doc",
           label: "Download",
           id: "user-guide/download-page",
         },
