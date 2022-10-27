@@ -18,7 +18,8 @@ The Home page can be divided into the following various parts to understand it b
 
 ### Resources
 
-- **[Broadmaps](https://broadmap.xyz)**: Broadmaps was a 36 issue weekly newsletter with high-signal information on products, tech, and growth
+- **[Broadmaps](https://broadmap.xyz)**: Broadmaps was a 36 issue weekly
+  newsletter with high-signal information on products, tech, and growth
   ⚡ Curated with ♥ by [@\_viveknigam\_](https://github.com/viveknigam3003) &
   [@\_mercurybuddy](https://github.com/merrcury)
 
