@@ -17,7 +17,7 @@ Resuminator provides you the option for the single and two column display.
 ![Body styles](/doc_img/Body_style.png)
 
 :::tip
-Most companies prefer the single-column format because it is easier to parse and read in their software.
+Most organisations prefer the single-column format because it is easier to parse and read in their software.
 :::
 
 :::info
