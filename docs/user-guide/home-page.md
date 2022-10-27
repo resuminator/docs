@@ -8,7 +8,7 @@ To get started with Resuminator, you will be greeted with our Home page, which s
 
 ![Home Page](/doc_img/home_page.png)
 
-The Home page can be divided into the following various parts to understand it better ~
+The Home page can be divided into the following various parts to understand it better.
 
 ## Side-Bar
 
@@ -18,7 +18,7 @@ The Home page can be divided into the following various parts to understand it b
 
 ### Resources
 
-- **Broadmaps**: Broadmaps was a 36 issue weekly newsletter with high-signal information on products, tech, and growth
+- **[Broadmaps](https://broadmap.xyz)**: Broadmaps was a 36 issue weekly newsletter with high-signal information on products, tech, and growth
   ⚡ Curated with ♥ by [@\_viveknigam\_](https://github.com/viveknigam3003) &
   [@\_mercurybuddy](https://github.com/merrcury)
 
@@ -50,27 +50,25 @@ roles when applying for multiple companies.
 
 ## Navigation
 
-### Navigation-links
+### Navigation Options
 
 - **Home**: The place where you create and manage your resumes.
 
 - **Create**: This is where the actual magic happens and where you cook your resume with our
   drag-and-drop and easy-to-use technology.
-
-:::caution
-
-You cannot access Create or any further tabs until you choose a resume.
-:::
+  :::caution
+  You cannot access **Create** or any further tabs until you choose a resume.
+  :::
 
 - **Design**: This is where you can do the primary styling of your resumes like Body Styles, Font, colours etc.
 
-- **Download**: You can download your resumes in pdf format with a single click of a button.
+- **Download**: You can download your resumes in PDF format with a single click of a button.
 
 ### User Preferences
 
-- **Color Scheme**: You can toggle the website colour scheme between light mode and dark mode.
+- **Dark Mode Toggle**: You can toggle the website colour scheme between light mode and dark mode.
 
-- **Profile**: Information about the logged-in account, settings, and log-out button.
+- **Profile**: Information about the logged-in account, settings, and logout button.
 
 :::info
 
