@@ -5,7 +5,7 @@ sidebar-position: 3
 # Create page
 
 This is where the actual magic happens and where you cook your resume with our
-drag-and-drop easy-to-use technology, along with multiple customizations.
+drag-and-drop, easy-to-use feature, along with multiple customizations.
 
 > The create panel is the place where you get to edit the details inside your resume.
 
@@ -17,11 +17,11 @@ It gives you **editing options on the left** and an **A4 size preview on the rig
 
 ### Basic Info
 
-Here you have to give your basic information like your **full name** and **Job-Title** which will
+Here you have to give your basic information like your **Full Name** and **Job Title** which will
 appear on the top of your resume.
 
-You can also add a professional headshot(under resume photo) if you like and it will appear
-on the top right corner with a circle mask.
+You can also add a professional headshot(under Resume Photo) if you like and it will appear
+on the top right corner in circle.
 
 :::info
 Right now the resume photo only support PNG/JPEG image format with max size of 512KB.
@@ -62,9 +62,21 @@ The various sections are made with almost the same data input layout to familiar
 the user with Resuminator and make it easy to use.
 
 - The description sub-section supports Rich-text editing and markdown.
+  :::tip
+  You can learn more about how to write basic markdown [here](https://www.markdownguide.org/cheat-sheet/) [^1]
+  :::
+
 - You can change the order of your sub-section of a section (when in collapsed state)
   by dragging it above or below of other sub-sections in that section.
-  ![Section drag and drop](/gifs/section_drag.gif)
+
+  - **For example**, here drag and drop is shown in contacts and it is updated in resume to left and right of each other
+    ![Section drag and drop](/gifs/section_drag.gif)
+
+  - **Here**, in Education section(much like other sections beyond it) the order is
+    reflected in the resume as shown in the resume input side.
+
+    ![Education drag and drop](/gifs/edu_dnd.gif)
+
 - **Tags** can be used to signify technologies used in that experience
 - You can hide the entire section from your resume or a particular sub-section
   by toggling its respective visibility icon.
@@ -92,7 +104,7 @@ Freshers generally keep it on the top
 ### Skills
 
 You can manually add your skills to your resume.
-Resuminator provides the display of skills in 2 ways ~
+Resuminator provides the display of skills in 2 ways:
 
 Categories and Tags
 
@@ -104,3 +116,5 @@ Here you can see the A4 size preview of you resume and can also drag and drop th
 sections in the resume to update the resume layout.
 
 ![Drag and Drop in Resume Preview](/gifs/drag_drop.gif)
+
+[^1]: For more detailed markdown syntax you can refer [GitHub Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
