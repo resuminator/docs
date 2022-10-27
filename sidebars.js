@@ -36,6 +36,11 @@ module.exports = {
           label: "Create",
           id: "user-guide/create-page",
         },
+        {
+          type: "doc",
+          label: "Download",
+          id: "user-guide/download-page",
+        },
       ],
     },
     {
