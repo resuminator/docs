@@ -63,7 +63,15 @@ the user with Resuminator and make it easy to use.
 
 - The description sub-section supports Rich-text editing and markdown.
   :::tip
-  You can learn more about how to write basic markdown [here](https://www.markdownguide.org/cheat-sheet/) [^1]
+  We support limited RTE and markdown functions like:
+
+  - Bold (`⌘/ctrl` + `B`)
+  - Italics (`⌘/ctrl` + `I`)
+  - Bulleted List(start a bulleted list with `*` followed by letters)
+  - Numbered List(start a Numbered list with `1.` followed by letters)
+  - Left align
+  - Justify
+
   :::
 
 - You can change the order of your sub-section of a section (when in collapsed state)
@@ -116,5 +124,3 @@ Here you can see the A4 size preview of you resume and can also drag and drop th
 sections in the resume to update the resume layout.
 
 ![Drag and Drop in Resume Preview](/gifs/drag_drop.gif)
-
-[^1]: For more detailed markdown syntax you can refer [GitHub Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
