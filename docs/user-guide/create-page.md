@@ -9,7 +9,7 @@ drag-and-drop, easy-to-use feature, along with multiple customizations.
 
 > The create panel is the place where you get to edit the details inside your resume.
 
-It gives you **editing options on the left** and an **A4 size preview on the right**.
+It gives you **Editing options on the left** and a **Live resume preview on the right**.
 
 ![Create Page](/doc_img/create-page.png)
 
@@ -120,7 +120,7 @@ Categories and Tags
 
 ## Resume Preview
 
-Here you can see the A4 size preview of you resume and can also drag and drop the
+Here you can see the preview of you resume and can also drag and drop the
 sections in the resume to update the resume layout.
 
 ![Drag and Drop in Resume Preview](/gifs/drag_drop.gif)
