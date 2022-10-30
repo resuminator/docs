@@ -35,7 +35,6 @@ You can add various **links identifier of your contacts** from various website o
 
 We provide the respective icon for the following websites :
 
-
 - Twitter
 - Github
 - Gitlab
@@ -122,17 +121,20 @@ Resuminator provides the display of skills in two ways:
 
 ### Custom Sections
 
-This option allows you to add additional sections to your resume, that highlight any miscellaneous achievements, references, extra curricular activities or any social/volunteering associations. 
+This option allows you to add additional sections to your resume, that highlight
+any miscellaneous achievements, references, extra curricular activities or any social/volunteering associations.
 
-You can click on the **Create new section** button which would give you a popup to add the details about the section you intend to add. 
+You can click on the **Create new section** button which would give you a popup
+to add the details about the section you intend to add.
 
-Additionally you can also add the time period, and a short or a long description about this new section through three subsections provided in the popup.
+Additionally you can also add the time period, and a short or a
+long description about this new section through three subsections provided in the popup.
 
 ![Create a new custom section](/doc_img/create_new_section.png)
 
 ## Resume Preview
 
-This section allows you to see a live preview of your resume based on the details filled, and also gives you the option to drag and drop
-sections of the resume to make any changes to the layout.
+This section allows you to see a live preview of your resume based on the details filled.
+It also gives you the option to drag and drop sections of the resume to make any changes to the layout.
 
 ![Drag and Drop in Resume Preview](/gifs/drag_drop.gif)
