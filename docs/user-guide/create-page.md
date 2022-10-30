@@ -24,7 +24,7 @@ You can also add a professional headshot(under Resume Photo) if you like and it 
 on the top right corner in circle.
 
 :::info
-Right now the resume photo only support PNG/JPEG image format with max size of 512KB.
+Right now the resume photo only supports PNG/JPEG image formats with max size of 512KB.
 :::
 
 ### Where can people contact you
@@ -35,6 +35,7 @@ You can add various **links identifier of your contacts** from various website o
 
 We provide the respective icon for the following websites :
 
+
 - Twitter
 - Github
 - Gitlab
@@ -43,13 +44,13 @@ We provide the respective icon for the following websites :
 - Phone
 - Portfolio
 - Behance
-- Dribble
+- Dribbble
 - Youtube
 - Custom
 
 :::note
-For the custom link option you have to provide the link and identifier which will appear on your resume.
-You can use these custom links to add your Leetcode, CodeChef etc.
+The custom link option allows you to add links and identifiers which will appear on your resume.
+You can use these custom links to add your Leetcode, CodeChef profiles etc.
 :::
 
 ![Link adding](/gifs/add_link.gif)
@@ -85,7 +86,7 @@ the user with Resuminator and make it easy to use.
 
     ![Education drag and drop](/gifs/edu_dnd.gif)
 
-- **Tags** can be used to signify technologies used in that experience
+- **Tags** can be used to highlight skills/technologies relevant to the experience added.
 - You can hide the entire section from your resume or a particular sub-section
   by toggling its respective visibility icon.
 
@@ -112,15 +113,26 @@ Freshers generally keep it on the top
 ### Skills
 
 You can manually add your skills to your resume.
-Resuminator provides the display of skills in 2 ways:
+Resuminator provides the display of skills in two ways:
 
-Categories and Tags
+- Categories
+- Tags
 
 ![Skills - Categories and Tags](/doc_img/skills.png)
 
+### Custom Sections
+
+This option allows you to add additional sections to your resume, that highlight any miscellaneous achievements, references, extra curricular activities or any social/volunteering associations. 
+
+You can click on the **Create new section** button which would give you a popup to add the details about the section you intend to add. 
+
+Additionally you can also add the time period, and a short or a long description about this new section through three subsections provided in the popup.
+
+![Create a new custom section](/doc_img/create_new_section.png)
+
 ## Resume Preview
 
-Here you can see the preview of you resume and can also drag and drop the
-sections in the resume to update the resume layout.
+This section allows you to see a live preview of your resume based on the details filled, and also gives you the option to drag and drop
+sections of the resume to make any changes to the layout.
 
 ![Drag and Drop in Resume Preview](/gifs/drag_drop.gif)
