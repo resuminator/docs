@@ -28,8 +28,3 @@ a what-you-see-is-what-you-get (WYSIWYG) editor, you can create your first job w
 Resuminator is a completely free and open source project built and maintained by a
 [duo](https://www.resuminator.in/about#team) from India, and is backed by our community and contributors.
 
-You can support the development of this project if you believe this project added value to your life or could
-potentially add value to the lives of others. Your support helps us keep the servers and domain running
-and covers the maintenance budget for the project.
-
-Show your support by **[🍕 buying the team a pizza](https://www.buymeacoffee.com/resuminator)**

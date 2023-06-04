@@ -16,9 +16,9 @@ module.exports = {
     announcementBar: {
       id: "hacktoberfest-22",
       content:
-        "We are participating in <b>Hacktoberfest 2022</b> 🥳 Contribute to Resuminator's open-source codebase this October. <a href='/docs/hacktoberfest'>Learn More</a>",
-      backgroundColor: "#9092FF",
-      textColor: "#fffafa",
+        "<strong>⚠️ Important Update:</strong> As of 04 June, 2023, Resuminator and its services have entered maintenance-only phase. <a href='https://github.com/resuminator/resuminator#%EF%B8%8F-important-update-resuminator-entering-maintenance-only-phase'> Learn more about it here</a>",
+      backgroundColor: "#eed202",
+      textColor: "#212121",
       isCloseable: false,
     },
     navbar: {
@@ -34,7 +34,6 @@ module.exports = {
           position: "right",
           label: "Docs",
         },
-        { to: "/blog", label: "Blog", position: "right" },
         {
           href: "https://github.com/resuminator/docs",
           label: "GitHub",
@@ -62,11 +61,7 @@ module.exports = {
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: "https://github.com/resuminator/docs/edit/main/",
-        },
+        
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
